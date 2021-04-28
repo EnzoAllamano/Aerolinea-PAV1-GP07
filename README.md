@@ -12,20 +12,29 @@ para saber cual es la url van a su perfil en GitHub > Repositorios > abren el ul
 
 ## Si todo sale bien ejecutamos:
 ```bash
- $ git status
+ git status
 ```
 y debería salirnos que no hay cambios y que el árbol de trabajo está limpio
 
 ## Importante:
-Siempre que terminemos de hacer cambios ejecutamos los siguientes comandos:
-```bash
-- $ git add .
-- $ git commit -m "<UnMensajeAca>" (por ejemplo "cambie aerOlimpo por aeroPuto")
-- $ git push
-```
-
 Antes de empezar a trabajar hay que verificar que no haya cambios que no tengamos en nuestra máquina
 Para eso ejecutamos lo siguiente:
 ```bash
-- $ git pull upstream main
+- git pull
 ```
+En caso de que no funcione ejecutar 
+
+```bash
+- git remote -v
+```
+
+Siempre que terminemos de hacer cambios ejecutamos los siguientes comandos:
+```bash
+- git add .
+- git commit -m "<UnMensajeAca>" (por ejemplo "cambie aerOlimpo por aeroPuto")
+- git push
+```
+Luego vamos a GitHub > van a su perfil > repositories > Aerolinea-PAV1-GP07-1 > Pull requests > New Pull request > Create Pull Request > Si se quiere se puede agregar un comentario de los cambios que se hizo > Create pull request
+
+Una vez que se acepta el Pull request te llega un mail con la confirmacion y se actualiza el codigo para todos.
+
